@@ -7,6 +7,9 @@
 
 package-lock.json
 
+/uploads/resized/*.jpg
+
+
 # testing
 /coverage
 
