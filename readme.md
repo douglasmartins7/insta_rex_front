@@ -25,3 +25,16 @@ Construir o software
          7. Api cria os usuarios de testes
          8. Subir o jenkins pelo docker
 10. Crie a pipeline para roda o ci(continuous integration - integração continua)de build, unit test, integration test and behave test e depois o cd(delivey continuous - entrega continua)
+
+
+
+                            Start software
+-1. Tenho um desenho claro de como será o software.
+0. Tenho a modelagem do banco
+1. PO cria o BDD explicando na estória como deseja a regra de negôcio do software.
+2. O dev back-end cria o TDD com Rspec ou seja o teste antes unitarios com os dados do BDD como massa, var dar erro porque não tem o funcionalidade(RED), mais testes nessa camadas isolando o metodo sem ele ter integração, boa pratica no rspec e digitar uma descrição com pouco texto, no it.
+3. O dev back-end cria a classe(funcionalidade) e o metodo que o rspec pede até passar(GREEN).
+4. No futuro ele pode refatorar a funcionalidade para melhorar o código(BLUE).
+5. O dev cria os testes de integração(serviço) que bate no banco, precisa mockar, limpar o banco antes e depois(RED).
+6. O dev cria a funcionalidade da integração para passar(GREEN).
+7. Depois ele refatora a funcionalidade(BLUE).
